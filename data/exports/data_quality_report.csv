@@ -1,0 +1,2 @@
+Category,Issue,Affected Column,Affected Rows,Percentage,Severity,Recommended Action
+Date Validation,Synthetic placeholder: payment_date matches due_date on unpaid invoices,payment_date,15868,31.74%,High,Set payment_date to NaT for unpaid invoices to prevent false 0-day delays

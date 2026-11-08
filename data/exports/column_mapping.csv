@@ -1,0 +1,24 @@
+Project Field,Mapped Column,Field Type,Status
+Invoice ID,invoice_id,Core Requirement,Mapped
+Customer,customer_name,Core Requirement,Mapped
+Invoice Date,invoice_date,Core Requirement,Mapped
+Due Date,due_date,Core Requirement,Mapped
+Payment Date,payment_date,Core Requirement,Mapped
+Payment Status,payment_status,Core Requirement,Mapped
+Amount,total_amount,Core Requirement,Mapped
+Currency,currency,Core Requirement,Mapped
+Country,customer_country,Core Requirement,Mapped
+Invoice Number,invoice_number,Extended Attribute,Mapped
+Customer ID,customer_id,Extended Attribute,Mapped
+Customer Email,customer_email,Extended Attribute,Mapped
+Vendor,vendor_name,Extended Attribute,Mapped
+Product Category,product_category,Extended Attribute,Mapped
+Product Name,product_name,Extended Attribute,Mapped
+Quantity,quantity,Extended Attribute,Mapped
+Unit Price,unit_price,Extended Attribute,Mapped
+Discount Amount,discount_amount,Extended Attribute,Mapped
+Tax Amount,tax_amount,Extended Attribute,Mapped
+Shipping Cost,shipping_cost,Extended Attribute,Mapped
+Subtotal,subtotal,Extended Attribute,Mapped
+Payment Method,payment_method,Extended Attribute,Mapped
+Is Overdue,is_overdue,Extended Attribute,Mapped

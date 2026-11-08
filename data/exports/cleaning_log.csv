@@ -1,0 +1,2 @@
+Issue,Column Name,Action Taken,Reason,Rows Affected,Timestamp,Status
+Initialization,Dataset,Loaded baseline dataset,Session startup,50000,Initial,Success

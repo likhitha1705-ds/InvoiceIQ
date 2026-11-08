@@ -1,0 +1,32 @@
+Column Name,Detected Data Type,Unique Values,Missing Count,Missing %,Sample Value,Mapped Project Field,Inferred Meaning
+invoice_id,int64,50000,0,0.00%,1,Invoice ID,Unique primary key integer identifying each invoice record in the system
+invoice_number,str,50000,0,0.00%,INV-000000001,Invoice Number,Business invoice reference code with prefix INV-
+invoice_date,str,1826,0,0.00%,2019-06-12,Invoice Date,Date on which the invoice was generated and issued to customer
+due_date,str,1871,0,0.00%,2019-07-12,Due Date,Contractual payment deadline agreed in invoice terms
+customer_id,str,33859,0,0.00%,CUST-036270,Customer ID,Unique business customer / account identifier
+customer_name,str,1500,0,0.00%,Jennifer Rodriguez,Customer,Full legal or commercial name of the purchasing company/customer
+customer_email,str,33859,0,0.00%,jennifer.rodriguez36270@example.com,Customer Email,Official corporate email contact for billing correspondence
+customer_city,str,30,0,0.00%,Jaipur,Unmapped / Extended,City where the customer or delivery location is situated
+customer_state,str,26,0,0.00%,Rajasthan,Unmapped / Extended,State/Province of the customer location
+customer_country,str,9,0,0.00%,India,Country,Country of the billing entity
+vendor_id,str,30,0,0.00%,VEND-0010,Unmapped / Extended,Unique identifier for the issuing vendor/supplier
+vendor_name,str,30,0,0.00%,Crescent Group,Vendor,Commercial name of the seller / supplier entity
+product_id,str,46,0,0.00%,PROD-0029,Unmapped / Extended,Stock Keeping Unit (SKU) or product code
+product_category,str,8,0,0.00%,Industrial,Product Category,Industry classification of goods or services billed
+product_name,str,46,0,0.00%,Safety Helmet,Product Name,Commercial title or description of item purchased
+quantity,int64,50,0,0.00%,12,Quantity,Total number of units billed in transaction
+unit_price,float64,45350,0,0.00%,207.5,Unit Price,Base unit price per single item in specified currency
+discount_percent,float64,979,0,0.00%,10.0,Unmapped / Extended,Contractual percentage discount applied to subtotal
+tax_percent,float64,5,0,0.00%,28.0,Unmapped / Extended,Applicable statutory VAT / GST / sales tax rate
+subtotal,float64,49551,0,0.00%,2490.0,Subtotal,"Gross amount before discount, tax, and freight (quantity * unit_price)"
+discount_amount,float64,30079,0,0.00%,249.0,Discount Amount,Total monetary discount deducted from subtotal
+tax_amount,float64,46180,0,0.00%,627.48,Tax Amount,Total statutory tax calculated on post-discount amount
+shipping_cost,float64,12936,0,0.00%,146.19,Shipping Cost,"Freight, logistics, or dispatch charge billed to customer"
+total_amount,float64,49818,0,0.00%,3014.67,Amount,Final invoice total payable (subtotal - discount + tax + shipping)
+currency,str,6,0,0.00%,INR,Currency,"Standard ISO three-letter currency code (USD, INR, EUR, etc.)"
+payment_method,str,7,0,0.00%,Cash,Payment Method,"Payment instrument used or instructed (Bank Transfer, UPI, Credit Card, etc.)"
+payment_status,str,4,0,0.00%,Paid,Payment Status,"Current invoice settlement lifecycle state (Paid, Pending, Overdue, Cancelled)"
+payment_date,str,1882,0,0.00%,2019-06-21,Payment Date,Recorded timestamp of payment settlement (or placeholder in raw data)
+order_channel,str,6,0,0.00%,Online Portal,Unmapped / Extended,"Origination channel of the commercial order (Online Portal, Sales Rep, Marketplace)"
+sales_rep,str,233,0,0.00%,Sneha Iyer,Unmapped / Extended,Assigned internal commercial representative managing the client account
+is_overdue,int64,2,0,0.00%,0,Is Overdue,"Binary flag indicating whether invoice has breached agreed payment terms (1=Yes, 0=No)"

@@ -1,0 +1,21 @@
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc.*
+
+# Large Raw Datasets (Files > 100MB exceed GitHub's remote limit; automatically retrieved via kagglehub/loader)
+data/raw/*.csv
+data/raw/*.parquet
+data/raw/*.zip
+!data/raw/.gitkeep
+
+# Environments & Local IDE
+.env
+.venv/
+env/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
